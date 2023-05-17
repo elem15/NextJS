@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaHamburger } from 'react-icons/fa'
 export default function Header() {
@@ -5,10 +6,10 @@ export default function Header() {
     <header>
       <div><FaHamburger /></div>
       <nav>
-        <a href="">Домой</a>
-        <a href="">О нас</a>
-        <a href="">Отзывы</a>
-        <a href="">бургеры</a>
+        <Link href="/">Домой</Link>
+        <Link href="/about">О нас</Link>
+        <Link href="/review">Отзывы</Link>
+        <Link href="/burgers">Бургеры</Link>
       </nav>
     </header>
   )

@@ -3,7 +3,6 @@ import Header from '@/components/header';
 export default function About() {
   return (
     <>
-      <Header></Header>
       <div>
         <h1>О нас</h1>
         <p>Жирные бургеры - это старые добрые бургеры по классической рецептуре, нужных размеров и за приемлемую цену.</p>
