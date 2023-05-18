@@ -6,9 +6,11 @@ export default function NotFountPage() {
   const router = useRouter()
   const [counter, setCounter] = useState(5)
   useEffect(() => {
+    let i = counter
     let interval = setInterval(() => {
-      setCounter(counter - 1)
-      if (counter === 1) {
+      i--
+      setCounter(i)
+      if (i < 1) {
         clearInterval(interval)
         router.push('/')
       }
